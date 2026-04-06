@@ -1,1 +1,18 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --color-primary: #006491;
+  --color-primary-hover: #005578;
+
+  --color-secondary: #f3f3f3;
+  --color-secondary-hover: #e0e0e0;
+  --color-secondary-foreground: #4b5563;
+}
+
+@layer components {
+  .btn {
+    @apply px-8 py-4 rounded-md font-semibold text-lg transition-colors cursor-pointer;
+  }
+}
